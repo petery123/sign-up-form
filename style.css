@@ -3,6 +3,10 @@
     src: url("assets/Norse-Bold.otf");
 }
 
+:root{
+    --earth-color: rgb(61, 112, 32);
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -90,13 +94,14 @@ p{
 
 .preface > p:last-child{
     margin-top: auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .filling{
@@ -134,4 +139,28 @@ input:focus{
 
 input:invalid{
     border-color: rgb(206, 124, 124);
+}
+
+button{
+    margin: 30px 0;
+    border: none;
+    font-size: 1rem;
+    height: 50px;
+    border-radius: 10px;
+    width: 240px;
+    background-color: var(--earth-color);
+    color: white;
+    font-weight: 900;
+}
+.end{
+    font-size: 1rem;
+}
+
+.end *{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.end a{
+    color: var(--earth-color);
 }
