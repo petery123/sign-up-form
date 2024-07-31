@@ -55,16 +55,6 @@ a{
     margin-bottom: 20px;
 }
 
-.filling{
-    display: flex;
-    flex-direction: row;
-}
-
-.col{
-    display: flex;
-    flex-direction: column;
-}
-
 .main{
     flex: 1;
     display: flex;
@@ -80,10 +70,10 @@ a{
 .preface,
 .end{
     background-color: rgb(228, 227, 227);
+    flex: 1.1;
 }
 
 .preface{
-    flex: 1.2;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -100,5 +90,48 @@ p{
 
 .preface > p:last-child{
     margin-top: auto;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.filling{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    font-size: 0.9rem;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    font: inherit;
+    padding: 5px;
+    width: 33ch;
+    border: #E5E7EB solid 1px;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: rgb(102, 113, 218) solid 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input:invalid{
+    border-color: rgb(206, 124, 124);
 }
